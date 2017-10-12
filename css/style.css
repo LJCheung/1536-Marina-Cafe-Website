@@ -15,6 +15,12 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+@media screen and (max-width:767px) {
+    .address { text-align:center }
+    .parking { text-align:center }
+    .map { text-align:center }
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
