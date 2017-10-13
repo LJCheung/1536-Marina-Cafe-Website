@@ -25,11 +25,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span> 
                 </button>
-            <a class="navbar-brand" href="index.html">Marina Café</a>
+            <a class="navbar-brand" href="#">Marina Café</a>
             </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="menu.html">Menu</a></li> 
                 <li><a href="performances.html">Performances</a></li> 
@@ -40,6 +40,7 @@
     </nav>
     
     <!-- Jobs -->
+<!--
     <section id="jobs" class="jobs">
         <div class="container">
             <div class="row">
@@ -49,6 +50,79 @@
             </div>
         </div>
     </section>
+-->
+
+	<div class="sub_banner">
+		<img class="sub_banner_image" src="img/banner_jobs.jpg" id="sub_banner_jobs" alt="jobs">
+		<div class="sub_banner_text">
+			Jobs
+		</div>
+	
+	</div>
+
+
+
+	<div class="container-fluid">
+		
+		<div class="content" id="job_content">
+			<p>
+			Are you a college student who would like a part time job?<br />
+			Apply at Marina cafe -- we weill work around your school schedule.<br />
+			Complete the information form at the right to get the application process started.<br />
+			Or, if your prefer, stop by Marina Cafe any time and ask about employment opportunities.<br />
+			Marina Cafe is an equal opportunity employer.<br />
+			We celebrate the diversity of our associates!<br />
+			</p>
+		
+		
+			
+			<form action="job_applications.php" method="post" class="form" id="job_form">
+				Name:<input type="text" name="name" class="input_text" id="name_jobform" placeholder="Your name" required /><br />
+				Email Address:<input type="email" class="input_text" name="email" id="email_jobform" placeholder="xxx@xxx.xx" required /><br />
+				Phone:<input type="phone" class="input_text" name="phone" id="phone_jobform" placeholder="xxx-xxx-xxxx" required /><br />
+				
+				Bar AssociateServer:<input type="checkbox" class="input_checkbox" name="bar_associate" id="bar_associate_jobform" /><br />
+				Server:<input type="checkbox" class="input_checkbox" name="server" id="server_jobform" /><br />
+				Cleaning & Maintenace:<input type="checkbox" class="input_checkbox" name="cleaning_maintenace" id="cleaning_maintenace_jobform" /><br />
+				Manager:<input type="checkbox" class="input_checkbox" name="manager" id="manager_jobform" /><br />
+				
+				Employment type:
+				<input type="radio" class="input_radio" name="employment_type" id="pt_employment_type_jobform" checked="checked" />
+				<label for="pt_employment_type_jobform" class="radio_label">Part-time</label>
+				<input type="radio" class="input_radio" name="employment_type" id="ft_employment_type_jobform" />
+				<label for="ft_employment_type_jobform" class="radio_label">Full-time</label>
+				<br />
+
+				Gender:
+				<input type="radio" class="input_radio" name="gender" id="m_gender_jobform"  checked="checked" />
+				<label for="m_gender_jobform" class="radio_label">Male</label>
+				<input type="radio" class="input_radio" name="gender" id="f_gender_jobform" />
+				<label for="f_gender_jobform" class="radio_label">Female</label>
+				<br />
+				
+				Yeas of experience:
+				<select class="input_dropdown" name="years_of_experience" id="years_of_experience_jobform">
+					<option value="No experience">No experience</option>
+					<option value="Less than 1 year">Less than 1 year</option>
+					<option value="More than 1 year">More than 1 year</option>
+				</select>
+				<br />
+				
+				Comments:<textarea name="comments" class="input_text" id="comment_contactus" required ></textarea><br />
+				<input type="submit" value="Submit"/>
+				<input type="reset" value="Reset"/>
+
+			</form>
+		
+		
+		</div>
+	</div>
+
+
+
+
+
+
     
     <!-- Footer -->
     <footer>

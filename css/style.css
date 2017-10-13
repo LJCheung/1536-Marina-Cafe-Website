@@ -15,12 +15,6 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@media screen and (max-width:767px) {
-    .address { text-align:center }
-    .parking { text-align:center }
-    .map { text-align:center }
-}
-
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -51,3 +45,86 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+
+
+/*menu performances jobs*/
+
+img.menu_image{
+	width:300px;
+
+	
+}
+img.sub_banner_image{
+	
+	
+}
+.sub_banner{
+	position: relative;
+}
+
+
+.sub_banner_text{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+	color:white;
+	
+}
+
+
+.container{
+	text-align:center;
+	vertical-align: text-top
+}
+
+#nav-tabs_menu{
+	text-align:center;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*jobs*/
+#job_content {
+	width:40%;
+	padding-right:40px;
+	padding-left:40px;
+	margin: auto;
+	text-align:right;
+	min-width:300px;
+	margin-bottom: 20px;
+}
+
+.input_text{
+	width: 70%;
+	padding: 5px 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+	vertical-align: text-top;
+	
+}
+
+#comment_contactus{
+    height: 150px;
+    resize: none;
+}
+
+/*
+."nav nav-tabs"{
+	display:none;
+}
+
+div.tab-content>.tab-pane{
+	display:none;
+}
+
+
+div.tab-content>.active{
+	display:block;
+	
+}
+*/
