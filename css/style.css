@@ -1,5 +1,5 @@
 /*!
- * Styling elements taken from:
+ * Some styling elements taken from:
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -13,13 +13,35 @@ body {
 
 body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #f5fcff;
+}
+
+.mapbox {
+    padding: 40px;
+}
+
+.map {
+    width:100%;
+    height:300px;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+@media screen and (max-width:767px) {
+    .address { text-align:center }
+    .parking { text-align:center }
+    .map { text-align:center }
+    #welcome { font-size: 40px }
 }
 
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    background-color: rgba(100,100,100,.5);
+    color: #9d9d9d;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .text-vertical-center h1 {
@@ -27,6 +49,11 @@ body {
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+}
+
+.text-vertical-center img {
+    width: 70%;
+    max-width: 454px;
 }
 
 .header {
@@ -41,73 +68,123 @@ body {
     -o-background-size: cover;
 }
 
-footer {
-    padding: 10px 0;
-    text-align: center;
+#address {
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
+#wifi {
+    font-style: italic;
+}
 
+#descript1 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#descript2 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#descript3 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar {
+    letter-spacing: 2px;
+}
+
+#welcome {
+    letter-spacing: 2px;
+    color: #f5fcff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+h3 {
+    color: #46a2d4;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    letter-spacing: 2px;
+}
 
 /*Sub banner in menu, performances, jobs*/
-.sub_banner{
+.sub_banner {
 	position: relative;
+    height: 300px;
+    overflow: hidden;
 }
 
-.sub_banner_image{
+.sub_banner_image {
 	display: table;
-    position: relative;
+    position: absolute;
+    vertical-align: bottom;
     width: 100%;
-    height: 400px;
+    min-height: 300px;
+    opacity: 0.65;
 }
 
-.sub_banner_text{
+.sub_banner_text {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-	color:white;
+    font-size: 13vw;
+	color: #f5fcff;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
-
-
 /*menu*/
-#menu_content{
+#menu_content {
 	padding-top:40px;
-	max-width:850px;
+	max-width:1000px;
 	margin:auto;
 }
 
-.menu_image{
-	max-height:300px;
+.menu_image {
+	max-height:500px;
 	width: 100%;
 }
 
-
-
 /*performances*/
-#performances_content{
-	max-width:900px;
+#performances_content {
+	max-width:1000px;
 	padding-top:40px;
 	margin:auto;
 }
 
-.performance_image{
+.performance_image {
 	width:100%;
+    max-width: 300px;
 	margin:auto;
 }
 
-
-
 /*jobs*/
 #job_content {
-	max-width:900px;
+	max-width:1000px;
 	padding-top:40px;
 	margin:auto;
 	text-align:left;
 }
 
-.job_text{
+.job_text {
 	line-height:200%;
-	color:DarkSlateBlue;
+    color: #777;
+    margin:20px;
+}
+
+#job_form {
+    margin: 20px;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
 }
