@@ -47,21 +47,18 @@ footer {
 }
 
 
-/*menu performances jobs*/
 
-img.menu_image{
-	width:300px;
-
-	
-}
-img.sub_banner_image{
-	
-	
-}
+/*Sub banner in menu, performances, jobs*/
 .sub_banner{
 	position: relative;
 }
 
+.sub_banner_image{
+	display: table;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
 
 .sub_banner_text{
 	position: absolute;
@@ -70,61 +67,47 @@ img.sub_banner_image{
     transform: translate(-50%, -50%);
     font-size: 100px;
 	color:white;
-	
 }
 
 
-.container{
-	text-align:center;
-	vertical-align: text-top
+
+/*menu*/
+#menu_content{
+	padding-top:40px;
+	max-width:850px;
+	margin:auto;
 }
 
-#nav-tabs_menu{
-	text-align:center;
-	margin: auto;
-	margin-left: auto;
-	margin-right: auto;
+.menu_image{
+	max-height:300px;
+	width: 100%;
 }
+
+
+
+/*performances*/
+#performances_content{
+	max-width:900px;
+	padding-top:40px;
+	margin:auto;
+}
+
+.performance_image{
+	width:100%;
+	margin:auto;
+}
+
+
 
 /*jobs*/
 #job_content {
-	width:40%;
-	padding-right:40px;
-	padding-left:40px;
-	margin: auto;
-	text-align:right;
-	min-width:300px;
-	margin-bottom: 20px;
+	max-width:900px;
+	padding-top:40px;
+	margin:auto;
+	text-align:left;
 }
 
-.input_text{
-	width: 70%;
-	padding: 5px 5px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-	vertical-align: text-top;
-	
+.job_text{
+	line-height:200%;
+	color:DarkSlateBlue;
 }
-
-#comment_contactus{
-    height: 150px;
-    resize: none;
-}
-
-/*
-."nav nav-tabs"{
-	display:none;
-}
-
-div.tab-content>.tab-pane{
-	display:none;
-}
-
-
-div.tab-content>.active{
-	display:block;
-	
-}
-*/

@@ -40,81 +40,141 @@
     </nav>
     
     <!-- Jobs -->
-<!--
-    <section id="jobs" class="jobs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Jobs</h2>
-                </div>
-            </div>
-        </div>
-    </section>
--->
-
 	<div class="sub_banner">
 		<img class="sub_banner_image" src="img/banner_jobs.jpg" id="sub_banner_jobs" alt="jobs">
 		<div class="sub_banner_text">
 			Jobs
 		</div>
-	
 	</div>
 
 
 
 	<div class="container-fluid">
-		
+
 		<div class="content" id="job_content">
-			<p>
-			Are you a college student who would like a part time job?<br />
-			Apply at Marina cafe -- we weill work around your school schedule.<br />
-			Complete the information form at the right to get the application process started.<br />
-			Or, if your prefer, stop by Marina Cafe any time and ask about employment opportunities.<br />
-			Marina Cafe is an equal opportunity employer.<br />
-			We celebrate the diversity of our associates!<br />
-			</p>
-		
-		
-			
-			<form action="job_applications.php" method="post" class="form" id="job_form">
-				Name:<input type="text" name="name" class="input_text" id="name_jobform" placeholder="Your name" required /><br />
-				Email Address:<input type="email" class="input_text" name="email" id="email_jobform" placeholder="xxx@xxx.xx" required /><br />
-				Phone:<input type="phone" class="input_text" name="phone" id="phone_jobform" placeholder="xxx-xxx-xxxx" required /><br />
-				
-				Bar AssociateServer:<input type="checkbox" class="input_checkbox" name="bar_associate" id="bar_associate_jobform" /><br />
-				Server:<input type="checkbox" class="input_checkbox" name="server" id="server_jobform" /><br />
-				Cleaning & Maintenace:<input type="checkbox" class="input_checkbox" name="cleaning_maintenace" id="cleaning_maintenace_jobform" /><br />
-				Manager:<input type="checkbox" class="input_checkbox" name="manager" id="manager_jobform" /><br />
-				
-				Employment type:
-				<input type="radio" class="input_radio" name="employment_type" id="pt_employment_type_jobform" checked="checked" />
-				<label for="pt_employment_type_jobform" class="radio_label">Part-time</label>
-				<input type="radio" class="input_radio" name="employment_type" id="ft_employment_type_jobform" />
-				<label for="ft_employment_type_jobform" class="radio_label">Full-time</label>
-				<br />
+			<div class="well .well-lg">	
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="job_text">
+							<p>
+							Are you a college student who would like a part time job?<br />
+							Apply at Marina cafe -- we weill work around your school schedule.<br />
+							Complete the information form to get the application process started.<br />
+							Or, if your prefer, stop by Marina Cafe any time and ask about employment opportunities.<br />
+							Marina Cafe is an equal opportunity employer.<br />
+							We celebrate the diversity of our associates!<br />
+							</p>
+						</div>
 
-				Gender:
-				<input type="radio" class="input_radio" name="gender" id="m_gender_jobform"  checked="checked" />
-				<label for="m_gender_jobform" class="radio_label">Male</label>
-				<input type="radio" class="input_radio" name="gender" id="f_gender_jobform" />
-				<label for="f_gender_jobform" class="radio_label">Female</label>
-				<br />
-				
-				Yeas of experience:
-				<select class="input_dropdown" name="years_of_experience" id="years_of_experience_jobform">
-					<option value="No experience">No experience</option>
-					<option value="Less than 1 year">Less than 1 year</option>
-					<option value="More than 1 year">More than 1 year</option>
-				</select>
-				<br />
-				
-				Comments:<textarea name="comments" class="input_text" id="comment_contactus" required ></textarea><br />
-				<input type="submit" value="Submit"/>
-				<input type="reset" value="Reset"/>
+					</div>
+					
+					
+					
+					<div class="col-sm-6">
+						<form action="job_applications.php" method="post" class="form-horizontal" id="job_form">
 
-			</form>
-		
-		
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="name">Name:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="email">Email Address:</label>
+								<div class="col-sm-10">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="phone">Phone:</label>
+								<div class="col-sm-10">
+									<input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter phone" required>
+								</div>
+							</div>
+							
+							<div class="form-group"> 
+								<label class="col-sm-12">Please select the job roles your are interested in:</label>
+								<br />
+								
+								<div class="checkbox">
+									<div class="col-sm-6">
+										<label><input type="checkbox" name="bar_associate" id="bar_associate">Bar AssociateServer</label>
+									</div>
+									<div class="col-sm-6">
+										<label><input type="checkbox" name="server" id="server">Server</label>
+									</div>
+									<br />
+									<div class="col-sm-6">
+										<label><input type="checkbox" name="cleaning_maintenace" id="cleaning_maintenace">Cleaning & Maintenace</label>
+									</div>
+									<div class="col-sm-6">	
+										<label><input type="checkbox" name="manager" id="manager">Manager</label>
+									</div>
+								</div>
+							</div>
+						
+							<div class="form-group"> 
+								<label class="col-sm-12">Employment type:</label>
+								<br />
+								<div class="radio">
+									<div class="col-sm-6">
+										<label><input type="radio" name="employment_type" id="jobform_pt">Part-time</label>
+									</div>
+									<div class="col-sm-6">
+										<label><input type="radio" name="employment_type" id="jobform_ft">Full-time</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group"> 
+								<label class="col-sm-12">Gender:</label>
+								<br />
+								<div class="radio">
+									<div class="col-sm-6">
+										<label><input type="radio" name="gender" id="jobform_male" >Male</label>
+									</div>
+									<div class="col-sm-6">
+										<label><input type="radio" name="gender" id="jobform_female" >Female</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="form-group"> 
+								<label class="col-sm-4">Yeas of experience:</label>
+								
+								<select class="col-sm-8" name="years_of_experience" id="years_of_experience">
+									<option value="No experience">No experience</option>
+									<option value="Less than 1 year">Less than 1 year</option>
+									<option value="More than 1 year">More than 1 year</option>
+								</select>
+							</div>
+								
+								
+							<div class="form-group"> 	
+								<label class="col-sm-12">Comments:</label>
+								<br />
+								<textarea name="comments" class="col-sm-offset-1 col-sm-11"></textarea>
+							</div>						
+					
+						
+							<div class="form-group"> 
+								<div class="col-sm-offset-8 col-sm-2">
+									<button type="submit" class="btn btn-default">Submit</button>
+								</div>
+								<div class="col-sm-2">
+									<button type="reset" class="btn btn-default">Reset</button>
+								</div>
+								
+							</div>
+							
+
+						</form>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 
