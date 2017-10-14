@@ -15,12 +15,6 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-@media screen and (max-width:767px) {
-    .address { text-align:center }
-    .parking { text-align:center }
-    .map { text-align:center }
-}
-
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -50,4 +44,70 @@ body {
 footer {
     padding: 10px 0;
     text-align: center;
+}
+
+
+
+/*Sub banner in menu, performances, jobs*/
+.sub_banner{
+	position: relative;
+}
+
+.sub_banner_image{
+	display: table;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.sub_banner_text{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+	color:white;
+}
+
+
+
+/*menu*/
+#menu_content{
+	padding-top:40px;
+	max-width:850px;
+	margin:auto;
+}
+
+.menu_image{
+	max-height:300px;
+	width: 100%;
+}
+
+
+
+/*performances*/
+#performances_content{
+	max-width:900px;
+	padding-top:40px;
+	margin:auto;
+}
+
+.performance_image{
+	width:100%;
+	margin:auto;
+}
+
+
+
+/*jobs*/
+#job_content {
+	max-width:900px;
+	padding-top:40px;
+	margin:auto;
+	text-align:left;
+}
+
+.job_text{
+	line-height:200%;
+	color:DarkSlateBlue;
 }
