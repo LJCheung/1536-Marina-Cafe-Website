@@ -151,6 +151,17 @@ h4 {
 .menu_image {
 	max-height:500px;
 	width: 100%;
+    padding-top: 20px;
+}
+
+.nav-tabs {
+    padding-left: 25px;
+}
+
+.tab-content {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 /*performances*/
@@ -177,11 +188,11 @@ h4 {
 .job_text {
 	line-height:200%;
     color: #777;
-    margin:20px;
+    padding: 40px;
 }
 
 #job_form {
-    margin: 20px;
+    margin: 40px;
 }
 
 footer {
